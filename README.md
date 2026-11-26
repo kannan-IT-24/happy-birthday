@@ -44,8 +44,10 @@ npm run build
 
 ## 🌐 Deployment
 
-The site is deployed to GitHub Pages from the `main` branch with GitHub Actions.
-The production build uses the `/happy-birthday/` base path required by this repository.
+The site is configured to deploy to GitHub Pages from the `main` branch with GitHub Actions.
+For the first deployment, enable Pages in repository **Settings → Pages** and set
+**Build and deployment → Source** to **GitHub Actions**. The production build uses
+the `/happy-birthday/` base path required by this repository.
 
 To build the Pages artifact locally:
 

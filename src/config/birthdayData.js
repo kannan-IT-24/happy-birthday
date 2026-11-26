@@ -8,6 +8,8 @@
  *   - public/assets/music/
  */
 
+import { assetPath } from '../utils/assetPath';
+
 export const INITIAL_CONFIG = {
   // Passcode required for the surprise login
   defaultPassword: "love",
@@ -40,11 +42,11 @@ export const INITIAL_CONFIG = {
   // Birthday Wishes with Butterflies (public/assets/photos/birthday/)
   wishes: {
     title: "Happy Birthday, My Special Girl!",
-    photoUrl: "/assets/photos/birthday/WhatsApp Image 2026-11-26 at 6.41.40 PM (1).jpeg",
-    photoFallback: "/assets/photos/birthday/WhatsApp Image 2026-11-26 at 6.48.16 PM (2).jpeg",
+    photoUrl: assetPath("/assets/photos/birthday/WhatsApp Image 2026-11-26 at 6.41.40 PM (1).jpeg"),
+    photoFallback: assetPath("/assets/photos/birthday/WhatsApp Image 2026-11-26 at 6.48.16 PM (2).jpeg"),
     portraits: [
-      "/assets/photos/birthday/WhatsApp Image 2026-11-26 at 6.41.40 PM (1).jpeg",
-      "/assets/photos/birthday/WhatsApp Image 2026-11-26 at 6.48.16 PM (2).jpeg"
+      assetPath("/assets/photos/birthday/WhatsApp Image 2026-11-26 at 6.41.40 PM (1).jpeg"),
+      assetPath("/assets/photos/birthday/WhatsApp Image 2026-11-26 at 6.48.16 PM (2).jpeg")
     ],
     message: `To the most incredible girl who brightens up my entire world,
 May your smile never fade, your heart always stay peaceful, and your happiness multiply with each passing day.
@@ -55,14 +57,14 @@ Today is all about celebrating YOU and the wonderful soul you are! 🦋✨💖`,
 
   // Final Birthday Screen Portraits (public/assets/photos/final/)
   finalPhotos: [
-    "/assets/photos/final/WhatsApp Image 2026-11-26 at 6.48.19 PM.jpeg",
-    "/assets/photos/final/WhatsApp Image 2026-11-26 at 6.41.30 PM (1).jpeg"
+    assetPath("/assets/photos/final/WhatsApp Image 2026-11-26 at 6.48.19 PM.jpeg"),
+    assetPath("/assets/photos/final/WhatsApp Image 2026-11-26 at 6.41.30 PM (1).jpeg")
   ],
 
   // Letter Keepsake Photos (public/assets/photos/letter/)
   letterPhotos: [
-    "/assets/photos/letter/WhatsApp Image 2026-11-26 at 6.48.15 PM.jpeg",
-    "/assets/photos/letter/WhatsApp Image 2026-11-26 at 6.48.19 PM (2).jpeg"
+    assetPath("/assets/photos/letter/WhatsApp Image 2026-11-26 at 6.48.15 PM.jpeg"),
+    assetPath("/assets/photos/letter/WhatsApp Image 2026-11-26 at 6.48.19 PM (2).jpeg")
   ],
 
   // Memorable Photos Gallery (all 15 photos from public/assets/photos/gallery/)
@@ -73,8 +75,8 @@ Today is all about celebrating YOU and the wonderful soul you are! 🦋✨💖`,
       date: "Memory 01",
       category: "Sweet Moments",
       caption: "A smile that effortlessly brightens every single corner of my world.",
-      src: "/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.41.31 PM.jpeg",
-      fallback: "/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.41.31 PM.jpeg"
+      src: assetPath("/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.41.31 PM.jpeg"),
+      fallback: assetPath("/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.41.31 PM.jpeg")
     },
     {
       id: 2,
@@ -82,8 +84,8 @@ Today is all about celebrating YOU and the wonderful soul you are! 🦋✨💖`,
       date: "Memory 02",
       category: "Sweet Moments",
       caption: "Every frame with you turns an ordinary moment into an unforgettable treasure.",
-      src: "/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.41.38 PM.jpeg",
-      fallback: "/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.41.38 PM.jpeg"
+      src: assetPath("/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.41.38 PM.jpeg"),
+      fallback: assetPath("/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.41.38 PM.jpeg")
     },
     {
       id: 3,
@@ -91,8 +93,8 @@ Today is all about celebrating YOU and the wonderful soul you are! 🦋✨💖`,
       date: "Memory 03",
       category: "Adventures",
       caption: "Caught in the happiest of moments, laughing without a care in the world.",
-      src: "/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.41.38 PM (1).jpeg",
-      fallback: "/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.41.38 PM (1).jpeg"
+      src: assetPath("/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.41.38 PM (1).jpeg"),
+      fallback: assetPath("/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.41.38 PM (1).jpeg")
     },
     {
       id: 4,
@@ -100,8 +102,8 @@ Today is all about celebrating YOU and the wonderful soul you are! 🦋✨💖`,
       date: "Memory 04",
       category: "Special Dates",
       caption: "Always carrying warmth, kindness, and beauty wherever you go.",
-      src: "/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.41.39 PM.jpeg",
-      fallback: "/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.41.39 PM.jpeg"
+      src: assetPath("/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.41.39 PM.jpeg"),
+      fallback: assetPath("/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.41.39 PM.jpeg")
     },
     {
       id: 5,
@@ -109,8 +111,8 @@ Today is all about celebrating YOU and the wonderful soul you are! 🦋✨💖`,
       date: "Memory 05",
       category: "Sweet Moments",
       caption: "Moments I replay in my heart whenever I want to smile.",
-      src: "/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.41.39 PM (1).jpeg",
-      fallback: "/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.41.39 PM (1).jpeg"
+      src: assetPath("/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.41.39 PM (1).jpeg"),
+      fallback: assetPath("/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.41.39 PM (1).jpeg")
     },
     {
       id: 6,
@@ -118,8 +120,8 @@ Today is all about celebrating YOU and the wonderful soul you are! 🦋✨💖`,
       date: "Memory 06",
       category: "Special Dates",
       caption: "Shining brighter than every star in the midnight sky.",
-      src: "/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.41.39 PM (2).jpeg",
-      fallback: "/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.41.39 PM (2).jpeg"
+      src: assetPath("/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.41.39 PM (2).jpeg"),
+      fallback: assetPath("/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.41.39 PM (2).jpeg")
     },
     {
       id: 7,
@@ -127,8 +129,8 @@ Today is all about celebrating YOU and the wonderful soul you are! 🦋✨💖`,
       date: "Memory 07",
       category: "Adventures",
       caption: "Side by side, turning little moments into lifelong stories.",
-      src: "/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.41.40 PM (2).jpeg",
-      fallback: "/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.41.40 PM (2).jpeg"
+      src: assetPath("/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.41.40 PM (2).jpeg"),
+      fallback: assetPath("/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.41.40 PM (2).jpeg")
     },
     {
       id: 8,
@@ -136,8 +138,8 @@ Today is all about celebrating YOU and the wonderful soul you are! 🦋✨💖`,
       date: "Memory 08",
       category: "Sweet Moments",
       caption: "Your happiness will always be my favourite sight in the world.",
-      src: "/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.44.07 PM.jpeg",
-      fallback: "/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.44.07 PM.jpeg"
+      src: assetPath("/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.44.07 PM.jpeg"),
+      fallback: assetPath("/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.44.07 PM.jpeg")
     },
     {
       id: 9,
@@ -145,8 +147,8 @@ Today is all about celebrating YOU and the wonderful soul you are! 🦋✨💖`,
       date: "Memory 09",
       category: "Sweet Moments",
       caption: "The kind of genuine warmth that makes everything feel alright.",
-      src: "/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.44.08 PM.jpeg",
-      fallback: "/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.44.08 PM.jpeg"
+      src: assetPath("/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.44.08 PM.jpeg"),
+      fallback: assetPath("/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.44.08 PM.jpeg")
     },
     {
       id: 10,
@@ -154,8 +156,8 @@ Today is all about celebrating YOU and the wonderful soul you are! 🦋✨💖`,
       date: "Memory 10",
       category: "Adventures",
       caption: "Every adventure feels lighter and sweeter with you around.",
-      src: "/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.44.08 PM (1).jpeg",
-      fallback: "/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.44.08 PM (1).jpeg"
+      src: assetPath("/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.44.08 PM (1).jpeg"),
+      fallback: assetPath("/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.44.08 PM (1).jpeg")
     },
     {
       id: 11,
@@ -163,8 +165,8 @@ Today is all about celebrating YOU and the wonderful soul you are! 🦋✨💖`,
       date: "Memory 11",
       category: "Adventures",
       caption: "Unscripted smiles and memories that stay forever.",
-      src: "/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.44.08 PM (2).jpeg",
-      fallback: "/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.44.08 PM (2).jpeg"
+      src: assetPath("/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.44.08 PM (2).jpeg"),
+      fallback: assetPath("/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.44.08 PM (2).jpeg")
     },
     {
       id: 12,
@@ -172,8 +174,8 @@ Today is all about celebrating YOU and the wonderful soul you are! 🦋✨💖`,
       date: "Memory 12",
       category: "Special Dates",
       caption: "A reminder of how lucky I am to have you in my life.",
-      src: "/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.44.09 PM (1).jpeg",
-      fallback: "/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.44.09 PM (1).jpeg"
+      src: assetPath("/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.44.09 PM (1).jpeg"),
+      fallback: assetPath("/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.44.09 PM (1).jpeg")
     },
     {
       id: 13,
@@ -181,8 +183,8 @@ Today is all about celebrating YOU and the wonderful soul you are! 🦋✨💖`,
       date: "Memory 13",
       category: "Special Dates",
       caption: "More than words can say, this bond means everything to me.",
-      src: "/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.44.09 PM (2).jpeg",
-      fallback: "/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.44.09 PM (2).jpeg"
+      src: assetPath("/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.44.09 PM (2).jpeg"),
+      fallback: assetPath("/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.44.09 PM (2).jpeg")
     },
     {
       id: 14,
@@ -190,8 +192,8 @@ Today is all about celebrating YOU and the wonderful soul you are! 🦋✨💖`,
       date: "Memory 14",
       category: "Sweet Moments",
       caption: "One of those pictures that instantly brings a smile to my face.",
-      src: "/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.48.16 PM.jpeg",
-      fallback: "/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.48.16 PM.jpeg"
+      src: assetPath("/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.48.16 PM.jpeg"),
+      fallback: assetPath("/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.48.16 PM.jpeg")
     },
     {
       id: 15,
@@ -199,8 +201,8 @@ Today is all about celebrating YOU and the wonderful soul you are! 🦋✨💖`,
       date: "Memory 15",
       category: "Special Dates",
       caption: "May your life always shine just as beautifully as this moment.",
-      src: "/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.48.16 PM (1).jpeg",
-      fallback: "/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.48.16 PM (1).jpeg"
+      src: assetPath("/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.48.16 PM (1).jpeg"),
+      fallback: assetPath("/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.48.16 PM (1).jpeg")
     }
   ],
 
@@ -211,32 +213,32 @@ Today is all about celebrating YOU and the wonderful soul you are! 🦋✨💖`,
       title: "Moments of Pure Happiness",
       date: "Video Memory 01",
       description: "A special clip filled with genuine smiles and unforgettable warmth.",
-      src: "/assets/videos/WhatsApp Video 2026-11-26 at 6.41.37 PM.mp4",
-      fallbackPoster: "/assets/photos/birthday/WhatsApp Image 2026-11-26 at 6.41.40 PM (1).jpeg"
+      src: assetPath("/assets/videos/WhatsApp Video 2026-11-26 at 6.41.37 PM.mp4"),
+      fallbackPoster: assetPath("/assets/photos/birthday/WhatsApp Image 2026-11-26 at 6.41.40 PM (1).jpeg")
     },
     {
       id: 2,
       title: "Cherished Vibes Together",
       date: "Video Memory 02",
       description: "Little moments caught in motion that mean the world to me.",
-      src: "/assets/videos/WhatsApp Video 2026-11-26 at 7.38.09 PM.mp4",
-      fallbackPoster: "/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.41.38 PM.jpeg"
+      src: assetPath("/assets/videos/WhatsApp Video 2026-11-26 at 7.38.09 PM.mp4"),
+      fallbackPoster: assetPath("/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.41.38 PM.jpeg")
     },
     {
       id: 3,
       title: "Unfiltered Smiles & Joy",
       date: "Video Memory 03",
       description: "Memories that make every day brighter just by watching them again.",
-      src: "/assets/videos/WhatsApp Video 2026-11-26 at 7.38.12 PM.mp4",
-      fallbackPoster: "/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.44.08 PM.jpeg"
+      src: assetPath("/assets/videos/WhatsApp Video 2026-11-26 at 7.38.12 PM.mp4"),
+      fallbackPoster: assetPath("/assets/photos/gallery/WhatsApp Image 2026-11-26 at 6.44.08 PM.jpeg")
     },
     {
       id: 4,
       title: "Forever in My Heart",
       date: "Video Memory 04",
       description: "Another beautiful memory saved forever in our birthday story.",
-      src: "/assets/videos/WhatsApp Video 2026-11-26 at 7.38.17 PM.mp4",
-      fallbackPoster: "/assets/photos/final/WhatsApp Image 2026-11-26 at 6.48.19 PM.jpeg"
+      src: assetPath("/assets/videos/WhatsApp Video 2026-11-26 at 7.38.17 PM.mp4"),
+      fallbackPoster: assetPath("/assets/photos/final/WhatsApp Image 2026-11-26 at 6.48.19 PM.jpeg")
     }
   ],
 
@@ -248,7 +250,7 @@ Today is all about celebrating YOU and the wonderful soul you are! 🦋✨💖`,
       title: "Where Our Story Began",
       description: "Who knew that one meeting would grow into one of the most cherished bonds of my life?",
       icon: "Sparkles",
-      photo: "/assets/photos/timeline/file_00000000b7dc8208bf125f747428de7c.png"
+      photo: assetPath("/assets/photos/timeline/file_00000000b7dc8208bf125f747428de7c.png")
     },
     {
       id: 2,
@@ -256,7 +258,7 @@ Today is all about celebrating YOU and the wonderful soul you are! 🦋✨💖`,
       title: "First Unforgettable Smiles",
       description: "Those early moments that made everything feel effortlessly special and bright.",
       icon: "Heart",
-      photo: "/assets/photos/timeline/WhatsApp Image 2026-11-26 at 6.41.30 PM.jpeg"
+      photo: assetPath("/assets/photos/timeline/WhatsApp Image 2026-11-26 at 6.41.30 PM.jpeg")
     },
     {
       id: 3,
@@ -264,7 +266,7 @@ Today is all about celebrating YOU and the wonderful soul you are! 🦋✨💖`,
       title: "Deep Talks & Late Hours",
       description: "Hours felt like minutes whenever we talked about everything and nothing at all.",
       icon: "MessageCircleHeart",
-      photo: "/assets/photos/timeline/WhatsApp Image 2026-11-26 at 6.41.37 PM.jpeg"
+      photo: assetPath("/assets/photos/timeline/WhatsApp Image 2026-11-26 at 6.41.37 PM.jpeg")
     },
     {
       id: 4,
@@ -272,7 +274,7 @@ Today is all about celebrating YOU and the wonderful soul you are! 🦋✨💖`,
       title: "Laughter That Heals",
       description: "Your presence has a magical way of turning any hard day into warmth and laughter.",
       icon: "Smile",
-      photo: "/assets/photos/timeline/WhatsApp Image 2026-11-26 at 6.41.38 PM (1).jpeg"
+      photo: assetPath("/assets/photos/timeline/WhatsApp Image 2026-11-26 at 6.41.38 PM (1).jpeg")
     },
     {
       id: 5,
@@ -280,7 +282,7 @@ Today is all about celebrating YOU and the wonderful soul you are! 🦋✨💖`,
       title: "Standing By Each Other",
       description: "Through every high and low, you never let me feel alone — and I'll never forget that.",
       icon: "Shield",
-      photo: "/assets/photos/timeline/WhatsApp Image 2026-11-26 at 6.44.09 PM (1).jpeg"
+      photo: assetPath("/assets/photos/timeline/WhatsApp Image 2026-11-26 at 6.44.09 PM (1).jpeg")
     },
     {
       id: 6,
@@ -288,7 +290,7 @@ Today is all about celebrating YOU and the wonderful soul you are! 🦋✨💖`,
       title: "Little Moments, Big Memories",
       description: "Even the simplest days together turned into stories I'll always hold close.",
       icon: "Sparkles",
-      photo: "/assets/photos/timeline/WhatsApp Image 2026-11-26 at 6.48.17 PM.jpeg"
+      photo: assetPath("/assets/photos/timeline/WhatsApp Image 2026-11-26 at 6.48.17 PM.jpeg")
     },
     {
       id: 7,
@@ -296,7 +298,7 @@ Today is all about celebrating YOU and the wonderful soul you are! 🦋✨💖`,
       title: "Pure Sunshine",
       description: "You keep bringing light into my world, and I always want to see you shine.",
       icon: "Sun",
-      photo: "/assets/photos/timeline/WhatsApp Image 2026-11-26 at 6.48.17 PM (1).jpeg"
+      photo: assetPath("/assets/photos/timeline/WhatsApp Image 2026-11-26 at 6.48.17 PM (1).jpeg")
     },
     {
       id: 8,
@@ -304,7 +306,7 @@ Today is all about celebrating YOU and the wonderful soul you are! 🦋✨💖`,
       title: "A Bond Beyond Words",
       description: "Understanding without needing to explain — a rare and priceless connection.",
       icon: "Heart",
-      photo: "/assets/photos/timeline/WhatsApp Image 2026-11-26 at 6.48.17 PM (2).jpeg"
+      photo: assetPath("/assets/photos/timeline/WhatsApp Image 2026-11-26 at 6.48.17 PM (2).jpeg")
     },
     {
       id: 9,
@@ -312,7 +314,7 @@ Today is all about celebrating YOU and the wonderful soul you are! 🦋✨💖`,
       title: "Celebrating You, Cutiee Pandaa",
       description: "Celebrating your life, your kindness, and the irreplaceable place you hold in my heart.",
       icon: "Gift",
-      photo: "/assets/photos/timeline/WhatsApp Image 2026-11-26 at 6.48.18 PM (1).jpeg"
+      photo: assetPath("/assets/photos/timeline/WhatsApp Image 2026-11-26 at 6.48.18 PM (1).jpeg")
     }
   ],
 
@@ -334,7 +336,7 @@ Today is all about celebrating YOU and the wonderful soul you are! 🦋✨💖`,
       ribbonColor: "#f3d58d",
       title: "Special Keepsake #1 — Made With Love",
       description: "A heartfelt surprise chosen especially to bring the brightest smile to your face.",
-      image: "/assets/photos/gifts/WhatsApp Image 2026-11-26 at 7.34.28 PM.jpeg",
+      image: assetPath("/assets/photos/gifts/WhatsApp Image 2026-11-26 at 7.34.28 PM.jpeg"),
       badge: "Precious Gift"
     },
     {
@@ -343,7 +345,7 @@ Today is all about celebrating YOU and the wonderful soul you are! 🦋✨💖`,
       ribbonColor: "#f472b6",
       title: "Special Keepsake #2 — Endless Happiness",
       description: "Wrapped with warm wishes for your peace, joy, and every dream in your heart.",
-      image: "/assets/photos/gifts/WhatsApp Image 2026-11-26 at 7.34.28 PM (1).jpeg",
+      image: assetPath("/assets/photos/gifts/WhatsApp Image 2026-11-26 at 7.34.28 PM (1).jpeg"),
       badge: "Pure Magic"
     },
     {
@@ -352,7 +354,7 @@ Today is all about celebrating YOU and the wonderful soul you are! 🦋✨💖`,
       ribbonColor: "#ffffff",
       title: "Special Keepsake #3 — Forever Treasure",
       description: "A token of how precious and special you will always be to me.",
-      image: "/assets/photos/gifts/WhatsApp Image 2026-11-26 at 7.34.29 PM.jpeg",
+      image: assetPath("/assets/photos/gifts/WhatsApp Image 2026-11-26 at 7.34.29 PM.jpeg"),
       badge: "Forever Yours"
     }
   ],

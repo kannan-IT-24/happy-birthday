@@ -44,7 +44,14 @@ npm run build
 
 ## 🌐 Deployment
 
-Deployed on Vercel. See `vercel.json` for SPA routing config.
+The site is deployed to GitHub Pages from the `main` branch with GitHub Actions.
+The production build uses the `/happy-birthday/` base path required by this repository.
+
+To build the Pages artifact locally:
+
+```bash
+npm run build:pages
+```
 
 ---
 

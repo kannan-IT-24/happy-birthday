@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Play, Pause, Maximize, Film, Plus } from 'lucide-react';
 import { soundEngine } from '../utils/soundEngine';
+import { assetPath } from '../utils/assetPath';
 
 function VideoCard({ video }) {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -161,7 +162,7 @@ export default function VideoGalleryStage({ config, onNext }) {
         date: 'Personal Video Clip',
         description: 'A special video clip uploaded for this birthday celebration.',
         src: url,
-        fallbackPoster: '/assets/photos/birthday/WhatsApp Image 2026-11-26 at 6.41.40 PM (1).jpeg'
+        fallbackPoster: assetPath('/assets/photos/birthday/WhatsApp Image 2026-11-26 at 6.41.40 PM (1).jpeg')
       };
       setVideoList([newVideo, ...videoList]);
       soundEngine.playSparkle();

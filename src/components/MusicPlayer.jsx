@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Volume2, VolumeX, Play, Pause } from 'lucide-react';
 import { soundEngine } from '../utils/soundEngine';
+import { assetPath } from '../utils/assetPath';
 
-const MUSIC_SRC = '/assets/music/birthday-music.mp3';
+const MUSIC_SRC = assetPath('/assets/music/birthday-music.mp3');
 
 export default function MusicPlayer() {
   const [isPlaying, setIsPlaying] = useState(false);

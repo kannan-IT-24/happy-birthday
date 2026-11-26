@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, Heart, Sparkles, Plus, Edit2, Calendar, Check, X } from 'lucide-react';
 import { soundEngine } from '../utils/soundEngine';
+import { assetPath } from '../utils/assetPath';
 
 export default function TimelineStage({ config, onNext }) {
   const [timelineEvents, setTimelineEvents] = useState(config.timeline);
@@ -28,7 +29,7 @@ export default function TimelineStage({ config, onNext }) {
       title: newTitle.trim(),
       date: newDate.trim(),
       description: newDesc.trim() || 'A cherished memory etched in our hearts forever.',
-      photo: newPhoto.trim() || '/assets/photos/timeline/WhatsApp Image 2026-11-26 at 6.48.17 PM.jpeg'
+      photo: newPhoto.trim() || assetPath('/assets/photos/timeline/WhatsApp Image 2026-11-26 at 6.48.17 PM.jpeg')
     };
 
     setTimelineEvents([...timelineEvents, newEvent]);
